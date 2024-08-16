@@ -6,7 +6,7 @@ class TestCustomerAccounts(unittest.TestCase):
     def setUp(self):
         self.app = app.app.test_client()
         self.app.testing = True
-
+    
     def test_create_account(self):
         response = self.app.post('/accounts', json={'id': '1', 'name': 'John Doe'})
         self.assertEqual(response.status_code, 201)

@@ -7,7 +7,7 @@ CORS(app)
 Talisman(app, content_security_policy=None, force_https=False)
 
 @app.route('/')
-def hello_world():
+def home():
     return 'Hello, World!'
 
 accounts = {}
