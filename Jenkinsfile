@@ -8,7 +8,7 @@ pipeline {
         stage('Build') {
             steps {
                 // Commands to build your Docker image
-                bat 'docker build -t $DOCKER_IMAGE .'
+                bat 'docker build -t %DOCKER_IMAGE% .'
             }
         }
         stage('Test') {
